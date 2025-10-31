@@ -1,0 +1,72 @@
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="micGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A90E2;stop-opacity:1" />
+      <stop offset="25%" style="stop-color:#5BA0F2;stop-opacity:1" />
+      <stop offset="75%" style="stop-color:#4A90E2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#357ABD;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="standGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#999999;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#777777;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#555555;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="highlight" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#FFFFFF;stop-opacity:0" />
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="6" stdDeviation="6" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  
+  <!-- Microphone body -->
+  <rect x="96" y="32" width="64" height="112" rx="32" ry="32" fill="url(#micGradient)" stroke="#2C5F8A" stroke-width="4" filter="url(#shadow)"/>
+  
+  <!-- Highlight overlay -->
+  <rect x="96" y="32" width="64" height="112" rx="32" ry="32" fill="url(#highlight)"/>
+  
+  <!-- Microphone grille outer -->
+  <rect x="104" y="48" width="48" height="80" rx="24" ry="24" fill="none" stroke="#2C5F8A" stroke-width="3" opacity="0.5"/>
+  
+  <!-- Grille lines -->
+  <g opacity="0.7">
+    <line x1="112" y1="56" x2="144" y2="56" stroke="#2C5F8A" stroke-width="2"/>
+    <line x1="112" y1="64" x2="144" y2="64" stroke="#2C5F8A" stroke-width="2"/>
+    <line x1="112" y1="72" x2="144" y2="72" stroke="#2C5F8A" stroke-width="2"/>
+    <line x1="112" y1="80" x2="144" y2="80" stroke="#2C5F8A" stroke-width="2"/>
+    <line x1="112" y1="88" x2="144" y2="88" stroke="#2C5F8A" stroke-width="2"/>
+    <line x1="112" y1="96" x2="144" y2="96" stroke="#2C5F8A" stroke-width="2"/>
+    <line x1="112" y1="104" x2="144" y2="104" stroke="#2C5F8A" stroke-width="2"/>
+    <line x1="112" y1="112" x2="144" y2="112" stroke="#2C5F8A" stroke-width="2"/>
+    <line x1="112" y1="120" x2="144" y2="120" stroke="#2C5F8A" stroke-width="2"/>
+  </g>
+  
+  <!-- Microphone stand -->
+  <rect x="120" y="144" width="16" height="48" fill="url(#standGradient)" filter="url(#shadow)"/>
+  
+  <!-- Base -->
+  <ellipse cx="128" cy="208" rx="48" ry="12" fill="url(#standGradient)" filter="url(#shadow)"/>
+  
+  <!-- Sound waves - outer ring -->
+  <path d="M 32 96 Q 32 64 64 64" stroke="#4A90E2" stroke-width="6" fill="none" opacity="0.6"/>
+  <path d="M 192 64 Q 224 64 224 96" stroke="#4A90E2" stroke-width="6" fill="none" opacity="0.6"/>
+  <path d="M 32 128 Q 32 160 64 160" stroke="#4A90E2" stroke-width="6" fill="none" opacity="0.6"/>
+  <path d="M 192 160 Q 224 160 224 128" stroke="#4A90E2" stroke-width="6" fill="none" opacity="0.6"/>
+  
+  <!-- Sound waves - middle ring -->
+  <path d="M 48 88 Q 48 72 64 72" stroke="#4A90E2" stroke-width="4" fill="none" opacity="0.5"/>
+  <path d="M 192 72 Q 208 72 208 88" stroke="#4A90E2" stroke-width="4" fill="none" opacity="0.5"/>
+  <path d="M 48 136 Q 48 152 64 152" stroke="#4A90E2" stroke-width="4" fill="none" opacity="0.5"/>
+  <path d="M 192 152 Q 208 152 208 136" stroke="#4A90E2" stroke-width="4" fill="none" opacity="0.5"/>
+  
+  <!-- Sound waves - inner ring -->
+  <path d="M 64 96 Q 64 80 80 80" stroke="#4A90E2" stroke-width="3" fill="none" opacity="0.4"/>
+  <path d="M 176 80 Q 192 80 192 96" stroke="#4A90E2" stroke-width="3" fill="none" opacity="0.4"/>
+  <path d="M 64 128 Q 64 144 80 144" stroke="#4A90E2" stroke-width="3" fill="none" opacity="0.4"/>
+  <path d="M 176 144 Q 192 144 192 128" stroke="#4A90E2" stroke-width="3" fill="none" opacity="0.4"/>
+  
+  <!-- Additional decorative elements -->
+  <circle cx="128" cy="88" r="2" fill="#FFFFFF" opacity="0.8"/>
+  <circle cx="128" cy="112" r="1.5" fill="#FFFFFF" opacity="0.6"/>
+</svg>

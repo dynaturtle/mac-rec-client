@@ -1,0 +1,118 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="micGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A90E2;stop-opacity:1" />
+      <stop offset="15%" style="stop-color:#5BA0F2;stop-opacity:1" />
+      <stop offset="30%" style="stop-color:#4A90E2;stop-opacity:1" />
+      <stop offset="45%" style="stop-color:#5BA0F2;stop-opacity:1" />
+      <stop offset="60%" style="stop-color:#4A90E2;stop-opacity:1" />
+      <stop offset="75%" style="stop-color:#5BA0F2;stop-opacity:1" />
+      <stop offset="90%" style="stop-color:#4A90E2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#357ABD;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="standGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#BBBBBB;stop-opacity:1" />
+      <stop offset="25%" style="stop-color:#999999;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#777777;stop-opacity:1" />
+      <stop offset="75%" style="stop-color:#555555;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#333333;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="highlight" cx="20%" cy="20%" r="80%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:0.5" />
+      <stop offset="30%" style="stop-color:#FFFFFF;stop-opacity:0.3" />
+      <stop offset="70%" style="stop-color:#FFFFFF;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#FFFFFF;stop-opacity:0" />
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="6" dy="12" stdDeviation="12" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+    <filter id="innerShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="4"/>
+      <feOffset dx="3" dy="3" result="offset"/>
+    </filter>
+  </defs>
+  
+  <!-- Microphone body -->
+  <rect x="384" y="128" width="256" height="448" rx="128" ry="128" fill="url(#micGradient)" stroke="#2C5F8A" stroke-width="8" filter="url(#shadow)"/>
+  
+  <!-- Highlight overlay -->
+  <rect x="384" y="128" width="256" height="448" rx="128" ry="128" fill="url(#highlight)"/>
+  
+  <!-- Microphone grille outer -->
+  <rect x="416" y="192" width="192" height="320" rx="96" ry="96" fill="none" stroke="#2C5F8A" stroke-width="6" opacity="0.7"/>
+  
+  <!-- Inner grille -->
+  <rect x="432" y="208" width="160" height="288" rx="80" ry="80" fill="none" stroke="#2C5F8A" stroke-width="4" opacity="0.5"/>
+  
+  <!-- Innermost grille -->
+  <rect x="448" y="224" width="128" height="256" rx="64" ry="64" fill="none" stroke="#2C5F8A" stroke-width="2" opacity="0.3"/>
+  
+  <!-- Grille lines -->
+  <g opacity="0.9">
+    <line x1="448" y1="224" x2="576" y2="224" stroke="#2C5F8A" stroke-width="4"/>
+    <line x1="448" y1="248" x2="576" y2="248" stroke="#2C5F8A" stroke-width="4"/>
+    <line x1="448" y1="272" x2="576" y2="272" stroke="#2C5F8A" stroke-width="4"/>
+    <line x1="448" y1="296" x2="576" y2="296" stroke="#2C5F8A" stroke-width="4"/>
+    <line x1="448" y1="320" x2="576" y2="320" stroke="#2C5F8A" stroke-width="4"/>
+    <line x1="448" y1="344" x2="576" y2="344" stroke="#2C5F8A" stroke-width="4"/>
+    <line x1="448" y1="368" x2="576" y2="368" stroke="#2C5F8A" stroke-width="4"/>
+    <line x1="448" y1="392" x2="576" y2="392" stroke="#2C5F8A" stroke-width="4"/>
+    <line x1="448" y1="416" x2="576" y2="416" stroke="#2C5F8A" stroke-width="4"/>
+    <line x1="448" y1="440" x2="576" y2="440" stroke="#2C5F8A" stroke-width="4"/>
+    <line x1="448" y1="464" x2="576" y2="464" stroke="#2C5F8A" stroke-width="4"/>
+  </g>
+  
+  <!-- Microphone stand -->
+  <rect x="480" y="576" width="64" height="192" fill="url(#standGradient)" filter="url(#shadow)"/>
+  
+  <!-- Stand connector -->
+  <rect x="496" y="560" width="32" height="32" rx="16" ry="16" fill="url(#standGradient)"/>
+  
+  <!-- Base -->
+  <ellipse cx="512" cy="832" rx="192" ry="48" fill="url(#standGradient)" filter="url(#shadow)"/>
+  
+  <!-- Sound waves - outermost ring -->
+  <path d="M 128 384 Q 128 256 256 256" stroke="#4A90E2" stroke-width="12" fill="none" opacity="0.8"/>
+  <path d="M 768 256 Q 896 256 896 384" stroke="#4A90E2" stroke-width="12" fill="none" opacity="0.8"/>
+  <path d="M 128 512 Q 128 640 256 640" stroke="#4A90E2" stroke-width="12" fill="none" opacity="0.8"/>
+  <path d="M 768 640 Q 896 640 896 512" stroke="#4A90E2" stroke-width="12" fill="none" opacity="0.8"/>
+  
+  <!-- Sound waves - outer ring -->
+  <path d="M 192 352 Q 192 288 256 288" stroke="#4A90E2" stroke-width="8" fill="none" opacity="0.7"/>
+  <path d="M 768 288 Q 832 288 832 352" stroke="#4A90E2" stroke-width="8" fill="none" opacity="0.7"/>
+  <path d="M 192 544 Q 192 608 256 608" stroke="#4A90E2" stroke-width="8" fill="none" opacity="0.7"/>
+  <path d="M 768 608 Q 832 608 832 544" stroke="#4A90E2" stroke-width="8" fill="none" opacity="0.7"/>
+  
+  <!-- Sound waves - middle ring -->
+  <path d="M 256 384 Q 256 320 320 320" stroke="#4A90E2" stroke-width="6" fill="none" opacity="0.6"/>
+  <path d="M 704 320 Q 768 320 768 384" stroke="#4A90E2" stroke-width="6" fill="none" opacity="0.6"/>
+  <path d="M 256 512 Q 256 576 320 576" stroke="#4A90E2" stroke-width="6" fill="none" opacity="0.6"/>
+  <path d="M 704 576 Q 768 576 768 512" stroke="#4A90E2" stroke-width="6" fill="none" opacity="0.6"/>
+  
+  <!-- Sound waves - inner ring -->
+  <path d="M 320 384 Q 320 352 352 352" stroke="#4A90E2" stroke-width="4" fill="none" opacity="0.5"/>
+  <path d="M 672 352 Q 704 352 704 384" stroke="#4A90E2" stroke-width="4" fill="none" opacity="0.5"/>
+  <path d="M 320 512 Q 320 544 352 544" stroke="#4A90E2" stroke-width="4" fill="none" opacity="0.5"/>
+  <path d="M 672 544 Q 704 544 704 512" stroke="#4A90E2" stroke-width="4" fill="none" opacity="0.5"/>
+  
+  <!-- Additional decorative elements -->
+  <circle cx="512" cy="352" r="8" fill="#FFFFFF" opacity="0.9"/>
+  <circle cx="512" cy="448" r="6" fill="#FFFFFF" opacity="0.8"/>
+  <circle cx="480" cy="400" r="4" fill="#FFFFFF" opacity="0.6"/>
+  <circle cx="544" cy="400" r="4" fill="#FFFFFF" opacity="0.6"/>
+  <circle cx="496" cy="376" r="3" fill="#FFFFFF" opacity="0.5"/>
+  <circle cx="528" cy="376" r="3" fill="#FFFFFF" opacity="0.5"/>
+  <circle cx="496" cy="424" r="3" fill="#FFFFFF" opacity="0.5"/>
+  <circle cx="528" cy="424" r="3" fill="#FFFFFF" opacity="0.5"/>
+  
+  <!-- Subtle texture lines on microphone body -->
+  <g opacity="0.4">
+    <line x1="400" y1="160" x2="400" y2="560" stroke="#FFFFFF" stroke-width="2"/>
+    <line x1="624" y1="160" x2="624" y2="560" stroke="#000000" stroke-width="2"/>
+    <line x1="416" y1="144" x2="416" y2="576" stroke="#FFFFFF" stroke-width="1"/>
+    <line x1="608" y1="144" x2="608" y2="576" stroke="#000000" stroke-width="1"/>
+  </g>
+  
+  <!-- Brand/logo area -->
+  <rect x="480" y="520" width="64" height="8" rx="4" ry="4" fill="#2C5F8A" opacity="0.6"/>
+</svg>
